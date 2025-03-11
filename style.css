@@ -1,0 +1,139 @@
+* {
+    font-family: "Sono", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: sono;
+    color: blue;
+}
+.land{
+    margin-left: 150px
+}
+.doc{
+    margin-right: 200px;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+p {
+    color: grey;
+    cursor: pointer;
+}
+
+.bir {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.text {
+    max-width: 500px;
+}
+
+.text h1 span {
+    color: blue;
+}
+
+.text p {
+    color: grey;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ikki {
+    background-color: blue;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.uch {
+    background-color: aliceblue;
+    color: blue;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 1px solid aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+img {
+    position: relative;
+    max-width: 600px;
+    left: 50px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        display: none; 
+    }
+
+    .bir {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .text {
+        max-width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ikki, .uch {
+        width: 100%;
+        padding: 10px 20px; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
